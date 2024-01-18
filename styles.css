@@ -8,6 +8,23 @@ html {
     scroll-behavior: smooth;
 }
 
+html, body {
+    overflow-x: hidden;
+}
+
+.navbar {
+    background-color: #9acd32 !important;
+}
+
+.logo {
+    color: white;
+    text-shadow: 0 0 5px black;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+
+
 .up {
     height: 40px;
     width: 40px;
@@ -28,285 +45,78 @@ html {
     color: #9acd32;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
     padding: 10px;
-    padding-bottom: 150px;
     text-transform: uppercase;
+    font-size: 25px;
 }
 
-/* HEADER INICIO */
-header {
-    display: flex;
-    justify-content: space-between;
-    background-color: #9acd32;
-    height: 6vh;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    text-shadow: 0 0 20px black;
-}
-
-.logo {
-    font-size: 30px;
-    font-weight: bold;
-    padding: 10px;
-}
-/* HEADER FIN */
-
-/* NAVBAR INICIO */
-nav {
-    height: 6vh;
-}
-
-nav a {
-    text-decoration: none;
-    color: azure;
-}
-
-nav a:hover {
-    color: black;
-    text-shadow: 0 0 20px white;
-}
-
-nav a:active {
-    color: #333;
-    text-shadow: 0 0 15px white;
-}
-
-nav ul {
-    list-style: none;
-    padding: 19px;
-}
-
-nav ul li {
-    display: inline-block;
-    margin-right: 10px;
-    font-size: 18px;
-}
-/* NAVBAR  FIN */
-
-/* INDEX INICIO */
-.main-index {
-    height: 100vh;
-    width: 100%;
-    background-color: #090c02;
+.background {
+    height: 850px;
     background-image: url(img/background.jpg);
-    background-position: center;
     background-size: cover;
+    background-position: center;
 }
 
 .news {
     background-color: rgba(0, 0, 0, 0.616);
-    display: inline-block;
-    margin: 30px;
-    margin-left: 38%;
-    padding: 20px;
-    color: white;
-    width: 60%;
+    background-size: cover;
+    height: fit-content;
     border: 2px solid #9acd32;
-    border-radius: 5px;
+    padding-bottom: 10px;
 }
 
-h1 {
-    color: #9acd32;
-    padding-bottom: 4vh;
-}
-
-.news p {
-    padding-bottom: 15px;
-}
-
-.news a {
-    text-decoration: none;
+.btn-more {
     color: black;
     background-color: #9acd32;
-    padding: 5px;
-}
-
-.news a:hover {
-    background-color: #ff4500;
-}
-
-.sec {
-    background-color: #090c02;
-}
-
-section div {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-evenly;
-    align-items: center;
-    align-content: space-between;
-}
-/* INDEX FIN */
-
-/* CATEGORIAS INICIO */
-.sec-categories {
-    background-color: #090c02;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-}
-
-.category {
-    max-width: 20%;
-    background-color: #9acd32;
-    color: #090c02;
-    border: 2px solid #c05746;
-    border-radius: 8%;
-    margin-bottom: 100px;
-}
-
-.subtitle {
-    color: #9acd32;
-    padding-top: 40px;
-    padding-bottom: 5px;
-    text-align: center;
-}
-/* CATEGORIAS FIN */
-
-/* REGISTRO INICIO */
-.sec-register {
-    height: 82.3vh;
-}
-
-.iniciar {
-    background-color: rgb(154, 205, 50);
-    background-image: linear-gradient(rgba(153, 205, 50, 0.6),
-            rgba(106, 141, 35, 0.7)),
-        url(img/login.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 425px;
-    width: 50%;
-    border-radius: 10px;
     border: 2px solid black;
-    padding: 10px;
+    font-weight: bold;
 }
 
-.iniciar input {
-    width: 100%;
-    margin: 10px 0;
-    margin-bottom: 24px;
+.content {
+    height: auto;
+}
+
+/* NAVBAR INICIO */
+.nav-link {
+    color: black;
     font-size: 20px;
-    color: #090c02;
-    background-color: transparent;
-    border: none;
-    border-bottom: 3px solid #090c02;
+    font-weight: bold;
+    text-shadow: 0 0 20px black;
 }
 
-.iniciar input::placeholder {
-    color: #090c02;
+.nav-link:hover {
+    color: rgb(37, 36, 36);
+    text-shadow: 0 0 5px white;
 }
 
-.iniciar input:last-of-type {
-    margin: 0%;
-    background-color: #d15f4e;
-    border: 2px solid #090c02;
+.nav-link:focus {
+    color: rgba(255, 255, 255, 0.637);
+    text-shadow: 0 0 5px white;
 }
-/* REGISTRO FIN */
-
-/* QUIENES SOMOS INICIO */
-.sec-about {
-    height: 100vh;
-}
-
-.card {
-    width: 80vh;
-    background-size: cover;
-    background-color: #ff8811;
-    border: 2px solid #9acd32;
-    text-align: center;
-}
-
-.card-img {
-    border: 2px solid #090c02;
-    height: 250px;
-    background-image: url(img/banner.jpeg);
-    background-size: cover;
-    background-position: center;
-}
-
-.card h3 {
-    padding-top: 5px;
-}
-
-.card p {                                                           
-    padding: 20px;
-}
-/* QUIENES SOMOS FIN */
-
-/* CONTACTO INICIO */
-.sec-contact {
-    height: 82.3vh;
-}
-
-.contact {
-    background-color: rgb(154, 205, 50);
-    background-image: linear-gradient(rgba(153, 205, 50, 0.6),rgba(106, 141, 35, 0.7)),url(img/form.jpg);
-    background-size: cover;
-    background-position: center;
-    height: 425px;
-    width: 50%;
-    border-radius: 10px;
-    border: 2px solid black;
-    padding: 10px;
-}
-
-.contact input {
-    width: 100%;
-    margin: 10px 0;
-    font-size: 20px;
-    color: #333;
-    background-color: transparent;
-    border: none;
-    border-bottom: 3px solid #090c02;
-}
-
-.contact input::placeholder {
-    color: #090c02;
-}
-
-.contact input:active {
-    border: none;
-}
-
-.contact textarea {
-    width: 100%;
-    font-size: 20px;
-    background-color: transparent;
-    border: none;
-    border-bottom: 2px solid #090c02;
-}
-
-.contact textarea::placeholder {
-    color: #090c02;
-}
-
-form #enviar {
-    background-color: #d15f4e;
-    border: 2px solid #090c02;
-    color: #090c02;
-}
-
-form #enviar:hover {
-    background-color: #eb6b57;
-}
-/* CONTACTO FIN */
+/* NAVBAR  FIN */
 
 /* FOOTER INICIO */
-footer {
-    text-align: center;
-    font-size: 30px;
+.footer {
     background-color: #9acd32;
-    padding: 15px;
+    text-align: center;
+    padding: 10px;
 }
 
-footer p {
-    margin-bottom: 3px;
+.footer p {
+    font-size: 25px;
+    font-weight: bold;
+    text-shadow: 0 0 25px black;
 }
-
-footer a {
+.footer a {
+    padding: 10px;
+    color: black;
     font-size: 40px;
-    color: #090c02;
-    letter-spacing: 10px;
+    text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.459);
 }
 /* FOOTER FIN */
+
+/* MEDIA QUARIS */
+@media only screen and (min-width: 992px) {
+    .content {
+        height: 83vh;
+    }
+}
